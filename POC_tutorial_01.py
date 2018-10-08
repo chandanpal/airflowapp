@@ -10,7 +10,7 @@ def print_world():
 
 
 default_args = {
-    'owner': 'me',
+    'owner': 'airflow',
     'start_date': dt.datetime(2018, 10, 7),
     'retries': 1,
     'retry_delay': dt.timedelta(minutes=5),
