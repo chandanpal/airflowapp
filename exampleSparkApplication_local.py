@@ -26,7 +26,7 @@ export_config = BashOperator(
 #task to compute number of unique authors
 numUniqueAuthors = BashOperator(
     task_id='run-spark-job1',
-    bash_command=sparkSubmit + ' ' + '--master k8s://https://172.31.29.208:6443:6443 \
+    bash_command=sparkSubmit + ' ' + '--master k8s://https://172.31.29.208:6443 \
     --deploy-mode cluster \
 	--name spark-pi \
 	--class org.apache.spark.examples.SparkPi \
